@@ -2,9 +2,9 @@
   "name": "generative-ai",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "dev": "node src/index.js"
+    "dev": "node src/index.js",
+    "start": "node -r ts-node/register src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,10 @@
     "@google/generative-ai": "^0.24.1",
     "dotenv": "^16.5.0",
     "openai": "^4.100.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
